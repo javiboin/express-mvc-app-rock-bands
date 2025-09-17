@@ -4,12 +4,12 @@
   <body>
     <%- include('./partials/header') %>
 
-    <h2>Mostrar listado de generos musicales</h2>
+    <h2>Bandas del Genero: <%= genero %></h2>
     
     <ul>
-      <% for (i=0; i < generosMusicales.length; i++) { %>
-      <li> <a href="/genres/<%= generosMusicales[i]  %>"><%= generosMusicales[i]  %></a> </li> 
-      <% } %>
+      <% bandas.forEach( (b) => { %>
+      <li><%= b.nombre %></li>
+      <% }) %>
     </ul>
 
     <a href="/">Volver Atras</a>
