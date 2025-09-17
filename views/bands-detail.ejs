@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <%- include('./partials/head') %>
+  <body>
+    <%- include('./partials/header') %>
+
+    <h2>Mostrar información de la banda <%= nombre %></h2>
+    
+    <p><%= id %></p>
+    <p><%= nombre %></p>
+    <p><%= integrantes %></p>
+    <p><%= genero %></p>
+    <p><%= topCanciones %></p>
+    <p><%= cover %></p>
+    <p><%= video %></p>
+    
+    <a href="/">Volver Atras</a>
+
+    <%- include('./partials/footer') %>
+  </body>
+</html>

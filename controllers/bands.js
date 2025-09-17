@@ -25,12 +25,15 @@ const bandsController = {
             res.status(404).send('Recurso no encontrado');
         }
 
-        res.send(`
-            Mostrar banda segun ID: ${id}, <br>
-            Nombre: ${banda.nombre}, <br>
-            Integrantes: ${banda.integrantes}, <br>
-            Genero: ${banda.genero}
-        `);
+        res.render('bands-detail', {
+            id: banda.id,
+            nombre: banda.nombre,
+            integrantes: banda.integrantes,
+            genero: banda.genero,
+            topCanciones: banda.topCanciones,
+            cover: banda.cover,
+            video: banda.video,
+        });
     }
 }
 

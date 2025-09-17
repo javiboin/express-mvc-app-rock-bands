@@ -1,4 +1,4 @@
-const bandsController = {
+const genreController = {
     index: (req, res, next) => {
         res.render('genres');
     },
@@ -10,4 +10,4 @@ const bandsController = {
     }
 }
 
-module.exports = bandsController;
+module.exports = genreController;
