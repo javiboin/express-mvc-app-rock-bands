@@ -7,7 +7,9 @@
     <h2>Mostrar listado de las bandas</h2>
     
     <ul>
-      <li> <a href="/bands/id/1">Nombre de cada banda o grid de imagenes de cada banda</a> </li>
+      <% bandas.forEach( (b) => { %>
+      <li> <a href="/bands/id/<%= b.id %>"><%= b.nombre %></a> </li>
+      <% }) %>
     </ul>
 
     <a href="/">Volver Atras</a>
