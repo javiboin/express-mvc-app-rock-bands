@@ -1,9 +1,12 @@
 const bandsController = {
     index: (req, res, next) => {
-        res.send('Mostrar listado de generos musicales');
+        res.render('genres');
     },
     show: (req, res, next) => {
-        res.send('Mostrar bandas segun genero musical');
+        const genre = req.params.genre;
+        // validar parametro
+        // mostrar (Genero, bandas de ese genero)
+        res.send(`Mostrar bandas segun genero musical ${genre}`);
     }
 }
 
