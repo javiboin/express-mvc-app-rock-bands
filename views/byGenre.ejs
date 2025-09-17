@@ -8,11 +8,12 @@
     
     <ul>
       <% bandas.forEach( (b) => { %>
-      <li><%= b.nombre %></li>
+      <li><a href="/bands/id/<%= b.id %>"><%= b.nombre %></a> </li>
       <% }) %>
     </ul>
 
-    <a href="/">Volver Atras</a>
+    <a href="/genres/">Volver Atras</a>
+    <a href="/">Volver Home</a>
 
     <%- include('./partials/footer') %>
   </body>

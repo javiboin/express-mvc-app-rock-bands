@@ -4,7 +4,6 @@ function buscarGenerosMusicales(){
     return [...new Set(dbBandas.lista.map(banda => banda.genero))];
 }
 
-
 function validarGenero(genero){
     return dbBandas.lista.find(g => g.genero == genero);
 }
