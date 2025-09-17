@@ -1,9 +1,12 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  res.send('Mostrar listado de las bandas');
+});
+
+router.get('/id/:id', function(req, res, next) {
+  res.send('Mostrar banda segun ID');
 });
 
 module.exports = router;
