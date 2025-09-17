@@ -1,12 +1,9 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
+const bandsController = require('../controllers/bands');
 
-router.get('/', function(req, res, next) {
-  res.send('Mostrar listado de las bandas');
-});
+router.get('/', bandsController.index);
 
-router.get('/id/:id', function(req, res, next) {
-  res.send('Mostrar banda segun ID');
-});
+router.get('/id/:id', bandsController.show);
 
 module.exports = router;
