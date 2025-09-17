@@ -13,7 +13,6 @@ function buscarBanda(id) {
 
 const lista = obtenerIdYNombre(bandas.lista);
 
-
 const bandsController = {
     index: (req, res, next) => {
         res.render('bands', { bandas: lista });
