@@ -4,15 +4,28 @@
   <body>
     <%- include('./partials/header') %>
 
-    <h2>Mostrar información de la banda <%= nombre %></h2>
+    <h2><%= nombre %></h2>
+    <img src="/<%= cover %>" alt="Imagen de la <%= nombre %>" width="640" height="360">
     
-    <p><%= id %></p>
-    <p><%= nombre %></p>
-    <p><%= integrantes %></p>
-    <p><%= genero %></p>
-    <p><%= topCanciones %></p>
-    <p><%= cover %></p>
-    <p><%= video %></p>
+    <p>Integrantes: <%= integrantes %></p>
+    <p>Genero: <%= genero %></p>
+    
+    <p>Top Canciones:</p>
+    <ul>
+      <% for(i=0; i < topCanciones.length; i++) { %>
+        <li><%= topCanciones[i] %></li>
+      <% } %>
+    </ul>
+
+    <iframe 
+      src="<%= video %>" 
+      width="640" 
+      height="360" 
+      frameborder="0" 
+      allow="autoplay; encrypted-media" 
+      allowfullscreen>
+    </iframe>
+
     
     <a href="/bands/" class="btn-back">Volver Atras</a>
     <a href="/" class="btn-back">Volver Home</a>
