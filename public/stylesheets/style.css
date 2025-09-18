@@ -1,8 +1,16 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: "Rubik Doodle Shadow", system-ui;
+  font-size: 20px;
+  background: linear-gradient(to right, #872323, #22092C);
+  color: #ffffff;
 }
 
 a {
-  color: #00B7FF;
+  color: #dddddd;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
 }
