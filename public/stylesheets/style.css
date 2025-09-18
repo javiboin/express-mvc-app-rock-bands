@@ -9,8 +9,47 @@ body {
 a {
   color: #dddddd;
   text-decoration: none;
+  transition: all .8s ease;
+}
+
+a:hover{
+  color: #6d6a6a;
 }
 
 li {
   list-style-type: none;
+}
+
+
+
+.main-menu a{
+  border: 1px #131313 solid;
+  background-color: #995252;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.main-menu a:hover{
+  background-color: #22092C;
+  color: white;
+}
+
+.btn-back{
+  border: 1px #131313 solid;
+  background-color: #995252;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.btn-back:hover{
+  background-color: #22092C;
+  color: white;
 }
