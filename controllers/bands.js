@@ -22,7 +22,7 @@ const bandsController = {
         const banda = buscarBanda(id);
         
         if (!banda) {
-            return res.status(404).send('Recurso no encontrado');
+            return res.status(404).render('not-found');
         }
 
         res.render('bands-detail', {

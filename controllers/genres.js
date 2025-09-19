@@ -22,7 +22,7 @@ const genreController = {
         const generoEncontrado = validarGenero(genero);
         
         if (!generoEncontrado){
-            return res.status(404).send('Recurso no encontrado');
+            return res.status(404).render('not-found');
         }
         
         const bandasDelGenero = obtenerBandasPorGenero(genero);
