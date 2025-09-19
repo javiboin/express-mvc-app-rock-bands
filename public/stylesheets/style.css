@@ -20,8 +20,6 @@ li {
   list-style-type: none;
 }
 
-
-
 .main-menu a{
   border: 1px #131313 solid;
   background-color: #995252;
@@ -52,4 +50,21 @@ li {
 .btn-back:hover{
   background-color: #22092C;
   color: white;
+}
+
+#card-band {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#section-songs {
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+  border: #22092C solid 3px;
+  border-radius: 40px;
+  padding: 30px;
+  background-color: rgb(75, 75, 73);
 }
