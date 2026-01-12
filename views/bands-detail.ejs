@@ -2,37 +2,40 @@
 <html>
   <%- include('./partials/head') %>
   <body>
-    <%- include('./partials/header') %>
+    <div class="main-container">
+        <%- include('./partials/header') %>
 
-    <div id="card-band">
-      <h2><%= nombre %></h2>
-      <img src="/<%= cover %>" alt="Imagen de la <%= nombre %>" width="640" height="360">
-      
-      <p>Integrantes: <%= integrantes %></p>
-      <p>Genero: <%= genero %></p>
-      
-      <section id="section-songs">
-        <h3>Top Canciones:</h3>
-        <ul>
-          <% for(i=0; i < topCanciones.length; i++) { %>
-            <li>"<%= topCanciones[i] %>"</li>
-          <% } %>
-        </ul>
-      </section>
+        <div id="card-band">
+            <div>
+                <h2><%= nombre %></h2>
+                <img src="/<%= cover %>" alt="Imagen de la <%= nombre %>" width="640" height="360">
+                <p>Integrantes: <%= integrantes %></p>
+                <p>Genero: <%= genero %></p>
+            </div>
+            
+            <section id="section-songs">
+                <h3>Top Canciones:</h3>
+                <ul>
+                    <% for(i=0; i < topCanciones.length; i++) { %>
+                    <li>"<%= topCanciones[i] %>"</li>
+                    <% } %>
+                </ul>
+            </section>
 
-      <iframe 
-        src="<%= video %>" 
-        width="640" 
-        height="360" 
-        frameborder="0" 
-        allow="autoplay; encrypted-media" 
-        allowfullscreen>
-      </iframe>
-    </div>
+            <iframe 
+                src="<%= video %>" 
+                width="640" 
+                height="360" 
+                frameborder="0" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen>
+            </iframe>
+        </div>
     
-    <a href="/bands/" class="buttons">Volver Atras</a>
-    <a href="/" class="buttons">Volver Home</a>
+        <a href="/bands/" class="buttons">Volver Atras</a>
+        <a href="/" class="buttons">Volver Home</a>
 
-    <%- include('./partials/footer') %>
+        <%- include('./partials/footer') %>
+    </div>
   </body>
 </html>
