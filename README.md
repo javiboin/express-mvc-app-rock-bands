@@ -27,12 +27,30 @@ Aplicación web con Express y arquitectura MVC 💻
 ## 📌 Uso
 Rutas:
 
-- Root: /
-- Listado con todas las bandas: /bands
-- Obtener información de alguna banda o cantante en particular: /bands/id/{id}
-- Listado con generos musicales: /genres
-- Obtener listado de bandas según su genero musical seleccionado: /genres/{genre}
-- Agradecimientos: /credits
+- Root:
+```bash
+/
+```
+- Listado con todas las bandas:
+```bash
+/bands
+```
+- Obtener información de alguna banda o cantante en particular: 
+```bash
+/bands/id/{id}
+```
+- Listado con generos musicales: 
+```bash
+/genres
+```
+- Obtener listado de bandas según su genero musical seleccionado: 
+```bash
+/genres/{genre}
+```
+- Agradecimientos: 
+```bash
+/credits
+```
 
 ## 🛠️ Tecnologías Utilizadas
 - HTML
