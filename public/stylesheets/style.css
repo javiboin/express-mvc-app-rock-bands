@@ -2,12 +2,7 @@ body {
   font-family: "Rubik Doodle Shadow", system-ui;
   font-size: 20px;
   background: linear-gradient(to right, #872323, #22092C);
-  color: #ffffff;
-}
-
-h1:hover {
-  color: #872323;
-  cursor: pointer;
+  color: black;
 }
 
 .main-container {
@@ -16,18 +11,19 @@ h1:hover {
   border-radius: 40px;
   margin: 1rem auto;
   width: 90%;
-  background-color: rgb(191, 211, 211);
+  background-color: #f0dfdf;
   min-height: 60vh;
 }
 
 a {
-  color: #dddddd;
+  color: black;
   text-decoration: none;
   transition: all .8s ease;
 }
 
 a:hover{
-  color: #6d6a6a;
+  color: #872323;
+  cursor: pointer;
 }
 
 .main-menu{
