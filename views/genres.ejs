@@ -2,18 +2,23 @@
 <html>
   <%- include('./partials/head') %>
   <body>
-    <%- include('./partials/header') %>
+    <div class="main-container">
+		<%- include('./partials/header') %>
 
-    <h2>Mostrar listado de generos musicales</h2>
-    
-    <ul>
-      <% for (i=0; i < generosMusicales.length; i++) { %>
-      <li> <a href="/genres/<%= generosMusicales[i] %>"><%= generosMusicales[i]  %></a> </li> 
-      <% } %>
-    </ul>
+		<div class="space">
 
-    <a href="/" class="btn-back">Volver Atras</a>
+			<h2>Mostrar listado de generos musicales</h2>
+			
+			<ul class="list-group">
+				<% for (i=0; i < generosMusicales.length; i++) { %>
+					<li class="list-group-item"> <a href="/genres/<%= generosMusicales[i] %>"><%= generosMusicales[i]  %></a> </li> 
+				<% } %>
+			</ul>
 
-    <%- include('./partials/footer') %>
+		</div>
+		<a href="/" class="buttons">Volver Atras</a>
+		
+		<%- include('./partials/footer') %>
+    </div>
   </body>
 </html>

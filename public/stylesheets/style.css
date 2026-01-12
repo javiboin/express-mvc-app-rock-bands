@@ -1,9 +1,23 @@
 body {
-  padding: 50px;
   font-family: "Rubik Doodle Shadow", system-ui;
   font-size: 20px;
   background: linear-gradient(to right, #872323, #22092C);
   color: #ffffff;
+}
+
+h1:hover {
+  color: #872323;
+  cursor: pointer;
+}
+
+.main-container {
+  padding: 50px;
+  border: 1px solid #131313;
+  border-radius: 40px;
+  margin: 1rem auto;
+  width: 90%;
+  background-color: rgb(191, 211, 211);
+  min-height: 60vh;
 }
 
 a {
@@ -16,40 +30,40 @@ a:hover{
   color: #6d6a6a;
 }
 
-li {
-  list-style-type: none;
+.main-menu{
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-start; 
+  justify-content: flex-start; 
+  text-align: center;
 }
 
-.main-menu a{
+.main-menu div{
+  display: flex;
+  gap: 20px;
+}
+
+.buttons {
   border: 1px #131313 solid;
   background-color: #995252;
   color: white;
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
-  padding: 10px;
+  font-weight: bold;
+  padding: 10px 20px;
   margin-top: 20px;
+  border-radius: 5px;
 }
 
-.main-menu a:hover{
+.buttons:hover {
   background-color: #22092C;
   color: white;
 }
 
-.btn-back{
-  border: 1px #131313 solid;
-  background-color: #995252;
-  color: white;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  padding: 10px;
-  margin-top: 20px;
-}
-
-.btn-back:hover{
-  background-color: #22092C;
-  color: white;
+.space{
+  min-height: 60vh; 
+  margin-top: 1.5rem;
 }
 
 #card-band {

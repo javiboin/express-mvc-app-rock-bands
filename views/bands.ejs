@@ -2,18 +2,21 @@
 <html>
   <%- include('./partials/head') %>
   <body>
-    <%- include('./partials/header') %>
+    <div class="main-container">
+		<%- include('./partials/header') %>
 
-    <h2>Mostrar listado de las bandas</h2>
-    
-    <ul>
-      <% bandas.forEach( (b) => { %>
-      <li> <a href="/bands/id/<%= b.id %>"><%= b.nombre %></a> </li>
-      <% }) %>
-    </ul>
+		<div class="space">
+			<h2>Mostrar listado de las bandas</h2>
+			
+			<ul class="list-group">
+				<% bandas.forEach( (b) => { %>
+				<li class="list-group-item"> <a href="/bands/id/<%= b.id %>"><%= b.nombre %></a> </li>
+			<% }) %>
+			</ul>
+		</div>
+		<a href="/" class="buttons">Volver Atras</a>
 
-    <a href="/" class="btn-back">Volver Atras</a>
-
-    <%- include('./partials/footer') %>
+		<%- include('./partials/footer') %>
+    </div>
   </body>
 </html>
