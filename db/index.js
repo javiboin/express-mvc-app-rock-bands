@@ -21,7 +21,7 @@ module.exports = {
             integrantes: 5,
             genero: "Hip hop",
             topCanciones: ["Straight outta compton","Fuk da police","Boys in the hood"],
-            cover: 'images/nwa.png',
+            cover: 'images/nwa.jpg',
             id: 3,
             video: "https://www.youtube.com/embed/TMZi25Pq3T8"
         },{
